@@ -1,0 +1,22 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.14427",
+   "Default View_TopLeft":"-260,-397",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_s_axis_config_tvalid -pg 1 -lvl 0 -x -90 -y -130 -defaultsOSRD
+preplace port port-id_Clk -pg 1 -lvl 0 -x -90 -y -80 -defaultsOSRD
+preplace portBus audio_out -pg 1 -lvl 3 -x 910 -y -120 -defaultsOSRD
+preplace portBus tuning_word -pg 1 -lvl 0 -x -90 -y -190 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 1 -x 320 -y -140 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 2 -x 720 -y -120 -defaultsOSRD
+preplace netloc dds_compiler_1_m_axis_data_tdata 1 2 1 N -120
+preplace netloc tuning_word_1 1 0 1 -70 -190n
+preplace netloc s_axis_config_tvalid_1 1 0 1 -70 -140n
+preplace netloc dds_compiler_0_M_AXIS_PHASE 1 1 1 N -140
+levelinfo -pg 1 -90 320 720 910
+pagesize -pg 1 -db -bbox -sgen -260 -380 1060 140
+"
+}
+

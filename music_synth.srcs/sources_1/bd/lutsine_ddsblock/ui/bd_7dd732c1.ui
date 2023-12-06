@@ -1,0 +1,25 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"2.15244",
+   "Default View_TopLeft":"-549,-380",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port port-id_tune_valid_dds -pg 1 -lvl 0 -x -390 -y -90 -defaultsOSRD
+preplace port port-id_sine_cos_lut_valid -pg 1 -lvl 3 -x 610 -y -50 -defaultsOSRD
+preplace port port-id_Clk -pg 1 -lvl 0 -x -390 -y -220 -defaultsOSRD
+preplace portBus sine_cos_out -pg 1 -lvl 3 -x 610 -y -80 -defaultsOSRD
+preplace portBus tune_in_dds -pg 1 -lvl 0 -x -390 -y -120 -defaultsOSRD
+preplace inst phase_gen -pg 1 -lvl 1 -x 60 -y -110 -defaultsOSRD
+preplace inst sin_cos_lut -pg 1 -lvl 2 -x 420 -y -80 -defaultsOSRD
+preplace netloc Clk_1 1 0 2 -370 -200 240
+preplace netloc s_axis_config_tdata_0_1 1 0 1 N -120
+preplace netloc s_axis_config_tvalid_0_1 1 0 1 -360 -100n
+preplace netloc sin_cos_lut_m_axis_data_tdata 1 2 1 N -80
+preplace netloc sin_cos_lut_m_axis_data_tvalid 1 2 1 590 -60n
+preplace netloc phase_gen_M_AXIS_PHASE 1 1 1 230 -110n
+levelinfo -pg 1 -390 60 420 610
+pagesize -pg 1 -db -bbox -sgen -550 -570 780 140
+"
+}
+0

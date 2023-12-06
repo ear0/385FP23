@@ -1,0 +1,24 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7s50csga324-1",
+      "gen_directory": "../../../../music_synth.gen/sources_1/bd/tri_phase_gen",
+      "name": "tri_phase_gen",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2"
+    },
+    "design_tree": {
+      "dds_compiler_0": ""
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "tri_phase_gen_dds_compiler_0_0",
+        "xci_path": "ip\\tri_phase_gen_dds_compiler_0_0\\tri_phase_gen_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0"
+      }
+    }
+  }
+}

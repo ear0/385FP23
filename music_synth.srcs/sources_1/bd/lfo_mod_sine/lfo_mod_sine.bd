@@ -1,0 +1,179 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xCB0ED6D5A62C3CB3",
+      "device": "xc7s50csga324-1",
+      "gen_directory": "../../../../music_synth.gen/sources_1/bd/lfo_mod_sine",
+      "name": "lfo_mod_sine",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2022.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "lfo_sine_mod_pgen": "",
+      "lfo_sine_mod_lut": ""
+    },
+    "ports": {
+      "Clk": {
+        "direction": "I"
+      },
+      "s_axis_config_tvalid": {
+        "direction": "I"
+      },
+      "m_axis_data_tdata": {
+        "direction": "O",
+        "left": "15",
+        "right": "0"
+      },
+      "m_axis_data_tvalid": {
+        "direction": "O"
+      },
+      "s_axis_config_tdata": {
+        "direction": "I",
+        "left": "23",
+        "right": "0"
+      }
+    },
+    "components": {
+      "lfo_sine_mod_pgen": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "lfo_mod_sine_dds_compiler_0_0",
+        "xci_path": "ip\\lfo_mod_sine_dds_compiler_0_0\\lfo_mod_sine_dds_compiler_0_0.xci",
+        "inst_hier_path": "lfo_sine_mod_pgen",
+        "parameters": {
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "DDS_Clock_Rate": {
+            "value": "0.0441"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "3"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_only"
+          },
+          "Phase_Increment": {
+            "value": "Programmable"
+          },
+          "Phase_Width": {
+            "value": "22"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "lfo_sine_mod_lut": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "lfo_mod_sine_dds_compiler_0_1",
+        "xci_path": "ip\\lfo_mod_sine_dds_compiler_0_1\\lfo_mod_sine_dds_compiler_0_1.xci",
+        "inst_hier_path": "lfo_sine_mod_lut",
+        "parameters": {
+          "Amplitude_Mode": {
+            "value": "Unit_Circle"
+          },
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "Has_Phase_Out": {
+            "value": "false"
+          },
+          "Latency": {
+            "value": "7"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "M_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "Taylor_Series_Corrected"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Selection": {
+            "value": "Sine"
+          },
+          "Output_Width": {
+            "value": "16"
+          },
+          "PINC1": {
+            "value": "0"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "SIN_COS_LUT_only"
+          },
+          "Phase_Width": {
+            "value": "22"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "lfo_sine_mod_pgen_M_AXIS_PHASE": {
+        "interface_ports": [
+          "lfo_sine_mod_pgen/M_AXIS_PHASE",
+          "lfo_sine_mod_lut/S_AXIS_PHASE"
+        ]
+      }
+    },
+    "nets": {
+      "Clk_1": {
+        "ports": [
+          "Clk",
+          "lfo_sine_mod_pgen/aclk",
+          "lfo_sine_mod_lut/aclk"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "lfo_sine_mod_lut/m_axis_data_tdata",
+          "m_axis_data_tdata"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tvalid": {
+        "ports": [
+          "lfo_sine_mod_lut/m_axis_data_tvalid",
+          "m_axis_data_tvalid"
+        ]
+      },
+      "s_axis_config_tdata_1": {
+        "ports": [
+          "s_axis_config_tdata",
+          "lfo_sine_mod_pgen/s_axis_config_tdata"
+        ]
+      },
+      "s_axis_config_tvalid_1": {
+        "ports": [
+          "s_axis_config_tvalid",
+          "lfo_sine_mod_pgen/s_axis_config_tvalid"
+        ]
+      }
+    }
+  }
+}
