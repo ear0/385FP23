@@ -1,6 +1,6 @@
 # UIUC ECE 385 Final Project: audio synthesis on a Spartan-7 FPGA
 
-Source code for a simple audio synth implemented in HDL.
+Source code for a simple audio synth implemented in SystemVerilog/Verilog HDL.
 
 Features:
 
