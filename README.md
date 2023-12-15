@@ -13,3 +13,5 @@ Features:
 -PWM output (72 dB dynamic range) or PDM output (96 dB dynamic range)
 
 -User configurable ADSR envelope generator
+
+![image](https://github.com/ear0/385FP23/assets/43094785/44b26b23-4c10-4533-92bb-453e722da731)
